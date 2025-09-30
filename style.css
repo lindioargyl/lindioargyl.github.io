@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(to right, rgb(226, 241, 231) 10%, rgb(156, 167, 119) 30%);
+    background-color: rgb(249, 250, 251);
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -41,14 +41,14 @@ nav {
 
 .portfolio {
     font-size: 2rem;
-    color:rgb(60, 85, 45);
+    color:rgb(13, 148, 136);
     pointer-events: none;
     font-weight: 600;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(17, 24, 39);
     padding: 6px 15px;
     border-radius: 20px;
     margin: 0 10px;
@@ -56,7 +56,7 @@ a {
 }
 
 a:hover {
-    background-color: rgb(124, 144, 112);
+    background-color: rgb(250, 204, 21);
     color: white;
 }
 
@@ -84,7 +84,7 @@ a:hover {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: rgb(60, 85, 45);
+    background-color: rgb(34, 40, 49);
     transition: all 0.3 ease-in-out;
 }
 
@@ -92,7 +92,7 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: rgb(156, 167, 119);
+    background-color: rgb(249, 250, 251);
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -104,7 +104,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: rgb(226, 241, 231);
+    color: rgb(17, 24, 39);
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -213,6 +213,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 .btn {
@@ -225,7 +226,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-    border: rgb(60, 85, 45) 0.1rem solid;
+    border: rgb(249, 115, 22) 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -235,8 +236,8 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-    background:rgb(60, 85, 45);
-    color: white
+    background:rgb(250, 204, 21);
+    color: black
 }
 
 .btn-color-1:hover {
@@ -248,7 +249,7 @@ section {
 }
 
 .btn-color-2:hover {
-    border: rgb(124, 144, 112) 0.1rem solid;
+    border: rgb(249, 115, 22) 0.1rem solid;
 }
 
 .btn-container {
@@ -261,10 +262,14 @@ section {
     position: relative;
 }
 
+.title {
+  margin-bottom: 2rem;
+}
+
 .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-top: 6rem;
 }
 
 .about-details-container {
@@ -293,7 +298,7 @@ section {
     background: rgb(226, 241, 231);
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
+    border-color: rgb(249, 115, 22);
     text-align:center;
 }
 
@@ -309,11 +314,15 @@ section {
 }
 
 .title {
-    color: black;
+    color: rgb(13, 148, 136);
 }
 
 .section__text__p1 {
-    color:rgb(53, 53, 53);
+    color:rgb(17, 24, 39);
+}
+
+.section__text__p2 {
+    color: rgb(17, 24, 39);
 }
 
 .parallax img {
@@ -324,6 +333,11 @@ section {
     pointer-events: none;
 }
 
+.text-container p {
+    margin-bottom: 1.5rem; /* adjust the spacing */
+    line-height: 1.6;      /* optional: makes text easier to read */
+}
+
 
 /* EXPERIENCE SECTION */
 
@@ -332,7 +346,7 @@ section {
 }
 
 .experience-sub-title {
-    color: rgb(85, 85, 85);
+    color: rgb(13, 148, 136);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -341,11 +355,11 @@ section {
 .experience-details-container {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .article-container {
-    display: flex;
+    display: grid;
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
